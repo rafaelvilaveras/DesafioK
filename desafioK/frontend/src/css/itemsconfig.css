@@ -1,0 +1,55 @@
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-lista {
+    width: 90vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.container-lista div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    box-sizing: border-box;
+    border: 2px solid darkslategray;
+    padding: 1vw 2vw;
+    
+}
+
+.lista {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    gap: 0.5vw;
+    overflow: hidden;
+
+}
+
+.lista li {
+    display: flex;
+    flex: 0.5;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid darkslategray;
+    padding: 0.5vw;
+}
+
+.lista :is( .nome, .email, .telefone, .cpf ){
+    flex: 1.5;
+}

@@ -1,0 +1,25 @@
+.item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1vw;
+
+}
+
+.item-container li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0.5vw;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.active {
+    position: relative;
+    top: -1vh;
+    background-color: gray;
+    border-radius: 0.75rem;
+    flex: 2;
+    border-top: 2px solid darkslategray;
+}
